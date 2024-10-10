@@ -1,0 +1,11 @@
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    top: -20px; /* Monte le label vers le haut */
+    font-size: 12px; /* Réduit la taille du label */
+    color: green; /* Change la couleur du label */
+    transition: all 0.3s ease; /* Transition fluide */
+}
+
+input::placeholder {
+    color: transparent; /* Le placeholder reste invisible */
+}
